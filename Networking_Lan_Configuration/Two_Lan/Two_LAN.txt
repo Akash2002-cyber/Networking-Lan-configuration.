@@ -1,0 +1,44 @@
+Two Lan with One Router
+----------------------
+
+First take the router, switch and PC's required to install the single lane.
+
+{ I have to take a 25 Computers, 1 (2960-24 TT) Switch , 1 (ISR 4331) Router, and 1 DHCP Server.
+Why can I choose DHCP server , because I take more computers and IP allocation was very difficult and take more time }
+
+Then connect each computer to the switch
+{ each computers and switch can be connected through COPPER STRAIGHT THROUGH cables.}  
+
+Then connect the switch and the router.
+
+Now connected all types of devices and then choose the IP address for each computer and configure it.
+{I will take a C class IP Address.}
+{Each Computer IP Configuration
+ 
+    #Go to Desktop
+    #Click IP configuration
+    #Enter IP address, Subnet mask, Default Gateway
+    #And click close option }
+
+
+The next step is to configure the router.
+
+{Router Configuration Comments
+
+   #enable
+   #config terminal
+   #interface gig 0/0/0
+   #ip address (ip Address)(subnet mask)
+   #no shutdown
+   #exit 
+
+   #interface gig 0/0/1
+   #ip address (ip Address)(subnet mask)
+   #no shutdown
+   #exit
+}
+
+And next step to create a same LAN Area to different network
+
+
+Now that we can Build a LAN of a Large size.
